@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import Link from "next/link";
-import Date from "../components/date";
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
+import Link from 'next/link';
+import Date from '../components/date';
 
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
+import utilStyles from '../styles/utils.module.css';
+import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -25,11 +25,6 @@ export default function Home({ allPostsData }) {
         <p>
           Hi, I&apos;m Danny. I&apos;m a software engineer and a crypto
           enthusiast.
-        </p>
-        <p>
-          <Link href="/posts/first-post">
-            <a>our first post</a>
-          </Link>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
