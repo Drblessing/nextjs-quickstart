@@ -22,7 +22,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi, I'm Danny. I'm a software engineer and a crypto enthusiast.</p>
+        <p>
+          Hi, I&apos;m Danny. I&apos;m a software engineer and a crypto
+          enthusiast.
+        </p>
         <p>
           <Link href="/posts/first-post">
             <a>our first post</a>
